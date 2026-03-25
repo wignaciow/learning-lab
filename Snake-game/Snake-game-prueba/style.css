@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    border: black solid 10px;
+}
+
+#instructionText {
+    position: absolute;
+    width: 350px;
+    text-align: center;
+}
+
+.snake {
+    border: red dotted 1px;
+    background-color: coral;
+}
+
+.food {
+ border: green solid 10px;
+}

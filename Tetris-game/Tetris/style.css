@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+section {
+    position: absolute;
+    background: black;
+    height: 100vh;
+    top: 0;
+    inset: 0;
+    display: grid;
+    font-size: 48px;
+    color: aliceblue;
+    place-content: center;
+}
