@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/games.css">
+    <title>Salvo</title>
+</head>
+
+
+
+<body>
+    <div id="app" class="container-fluid">
+        <main id="main" class="row justify-content-center" v-if="userN == null">
+            <div id="boxTitle" class="col-12">
+                <div class="row">
+                    <div class="col-2 titleA">
+                        <div class=" row titleB">a</div>
+                    </div>
+                    <h1 id="title" class="col-8">BATTLE OF FOOD</h1>
+                    <div class="col-2 titleA">
+                        <div class=" row titleB">a</div>
+                    </div>
+                </div>
+            </div>
+            <div id="subtitle" class="col-12">
+                <div id="subtitleOne" class="row m-0">
+                    <h3 class="col-4">NO TASTES</h3>
+                    <h3 class="col-4">NO MERCY</h3>
+                </div>
+                <div id="subtitleTwo" class="row m-0">
+                    <h3 id="chooseTitle" class="col-6">
+                        <em class="planet left"><img id="meat" src="../web/imagenes/bife.png" alt=""></em>
+                        <em>&nbsp</em>
+                        <em>&nbsp</em>
+                        <em>&nbsp</em>
+                        <em>&nbsp</em>
+                        <em class="planet right"><img id="tomate" src="../web/imagenes/tomate.png" alt=""></em>
+
+                    </h3>
+                </div>
+                <div id="subtitleThree" class="row">
+                    <button class="btn btn-default orange-circle-button" data-toggle="modal" data-target="#logSign">
+                        <span class="orange-circle-greater-than">START<br />GAME</span>
+                    </button>
+                </div>
+            </div>
+            <div id="chef" class="col-12">
+                <div id="chefItem" class="row justify-content-between">
+                    <div id="vegano" class="col-4">
+                        <h1 id="v">V</h1>
+                    </div>
+                    <div id="carnicero" class="col-4">
+                        <h1 id="m">M</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="logSign" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <ul class="tab-group">
+                            <li class="tab" id="signLi"><a id="sign" v-on:click="loginFormTab($event)" href="#signup">Sign Up</a></li>
+                            <li class="tab active" id="logLi"><a id="log" v-on:click="loginFormTab($event)" href="#login">Log In</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="signup">
+                                <h1>Sign Up!</h1>
+                                <form action="/" method="post">
+                                    <div class="field-wrap">
+                                        <label class="inputSign" for="inputEmailSign">User Email</label>
+                                        <input type="email" spellcheck="false" id="inputEmailSign" aria-describedby="emailHelp" v-model="userName">
+                                    </div>
+                                    <div class="field-wrap">
+                                        <label class="inputSign" for="inputnickSign">Nick Name</label>
+                                        <input type="text" spellcheck="false" id="inputnickSign" v-model="nickName">
+                                    </div>
+                                    <div class="field-wrap">
+                                        <label class="inputSign" for="inputPasswordSign">Set a Password</label>
+                                        <input type="password" required autocomplete="off" class="form-inline" spellcheck="false" id="inputPasswordSign" v-model="password">
+                                    </div>
+                                    <button type="button" class="button button-block start" v-on:click="signUp">Get Started</button>
+                                </form>
+                            </div>
+                            <div id="login">
+                                <h1>Welcome Back!</h1>
+                                <form action="/" method="post">
+                                    <div class="field-wrap">
+                                        <label class="inputSign" for="inputEmailLog">User Email</label>
+                                        <input type="email" spellcheck="false" id="inputEmailLog" aria-describedby="emailHelp" v-model="userName">
+                                    </div>
+                                    <div class="field-wrap">
+                                        <label class="inputSign" for="inputPasswordLog">Password</label>
+                                        <input type="password" required autocomplete="off" class="form-inline" spellcheck="false" id="inputPasswordLog" v-model="password">
+                                    </div>
+
+                                    <p id="forgot"><a href="#">Forgot Password</a></p>
+                                    <br>
+                                    <button type="button" class="button button-block start" v-on:click="logIn">Get Started</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">LOG IN SUCCESSFUL</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="row" id="playerLog" >
+            <div class="col-11" v-if="userN != null">
+                <div id="playerMenu" class="row justify-content-around">
+                    <nav class="col-11 navbar navbar-expand-lg navBar">
+                        <a class="col-3 navbar-brand navBarTitle" href="#leaderboard">
+                            <img src="../web/imagenes/vegano.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                            BATTLE OF FOOD
+                        </a>
+                        <button type="button" class="btn btn-danger logOut" v-on:click="logOut" v-if="userN !== null ">
+                            Log Out
+                        </button>
+                    </nav>
+                    <div id="army" class="col-10">
+                        <h1 id="armyUser">RECRUIT: {{userNick}} </h1>
+                    </div>
+                    <div class="col-12" id="navbarSupportedContent">
+                        <ul id="navPlayer" class=" row nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="join-tab" data-toggle="tab" href="#join" role="tab" aria-controls="join" aria-selected="false">JOIN GAME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="continue-tab" data-toggle="tab" href="#continue" role="tab" aria-controls="continue" aria-selected="false">CONTINUE GAME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="statistics-tab" data-toggle="tab" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">STATISTICS</a>
+                            </li>
+                            <!--<li class="nav-item " role="tablist" aria-orientation="vertical">
+                                <a class="nav-link" id="homeOpened">Games: {{gamesInfo.length}}</a>
+                            </li>-->
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="menuDisplay" class="row">
+                            <div id="menuDisplayBox" class="col-11">
+                                <div class="row tab-content" id="tabContent">
+                                    <div class="col-12 tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class=" row justify-content-around">
+                                            <h2 id="homeText" class="col-5">It 's time to show this meat lovers, what are we made of! Invite a friend, to play this Salvo game, place your vegetables, and prepare to battle. </h2>
+                                            <table id="tableLeaderBoard" class="table table-striped col-5">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="player">Player</th>
+                                                        <th>Win</th>
+                                                        <th>Tie</th>
+                                                        <th>Loss</th>
+                                                        <th class="score">Score</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr v-for="name in players">
+                                                        <th class="player">{{name.user}} </th>
+                                                        <td>{{name.win}}</td>
+                                                        <td>{{name.tie}}</td>
+                                                        <td>{{name.loss}}</td>
+                                                        <td class="score">{{name.score}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <button type="button" data-toggle="modal" data-target="#modalFood" id="create" class="col-10 btn rounded-pill">NEW GAME</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-pane " id="join" role="tabpanel" aria-labelledby="join-tab">
+                                        <ul class="row listContent">
+                                            <li class="joinList col-12" v-for="games in joinGameList">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-10 title align-self-center">
+                                                        <ul class="row justify-content-between" v-for="gamePlayer in games.gamePlayers">
+                                                            <li class="col-6"><span>GAME {{games.id}}:</span> &nbsp; {{games.creationDate | date}}</li>
+                                                            <li class="col-6"><span>Opponent:</span> &nbsp; {{gamePlayer.player.userName}}</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-1 link" v-for="gamePlayer in games.gamePlayers">
+                                                        <a v-if="userN !== null && userN !== gamePlayer.player.userName && games.gamePlayers.length == 1"><button type="button"  data-toggle="modal" data-target="#modalFoodJoin" class="btn btn-circle btn-xl" v-on:click="joinGame(games.id)"></button></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class=" col-12 tab-pane" id="continue" role="tabpanel" aria-labelledby="continue-tab">
+                                        <ul class="row listContent">
+                                            <li class="continueList col-12" v-for="game in returnGameList">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-10 continuetitle  align-self-center">
+                                                        <ul class="row justify-content-between" v-for="gamePlayer in game.gamePlayers">
+                                                            <li class="col-6" ><span>Game {{game.id}}:</span> &nbsp; {{game.creationDate | date}}</li>
+                                                            <li class="col-6"><span> Opponent:</span>&nbsp;{{gamePlayer.player.userName}}</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-1 continuelink">
+                                                        <a v-for="gamePlayer in game.gamePlayers" v-if="userN !== null && userN == gamePlayer.player.userName" v-bind:href="'/web/game.html?gp='+gamePlayer.id" target="_blank"><button type="button" class="btn btn-circle btn-xl" ></button></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 tab-pane" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+                                        <ul>
+                                            <li>
+                                                <h1>OTROS</h1>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--MODALS-->
+        <!--SIGN - LOG UP-->
+        <div class="modal fade" id="modalFood" tabindex="-1" role="dialog" aria-labelledby="modalFood" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modalFoodContent">
+                    <div class="row modal-header modalFoodHeader">
+                        <h5 class="modal-title col-12 modalFoodTitle" >CHOOSE YOUR MENU</h5>
+                        <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body row modalFoodBody">
+                        <button type="button" class="btn btn-danger col-5 btnMea" data-dismiss="modal" v-on:click="createGameMeat">MEAT</button>
+                        <button type="button" class="btn btn-primary col-5 btnVeg" data-dismiss="modal" v-on:click="createGameVegetables">VEGETABLES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--JOIN GAME-->
+        <div class="modal fade" id="modalFoodJoin" tabindex="-1" role="dialog" aria-labelledby="modalFoodJoin" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modalFoodContent">
+                    <div class="row modal-header modalFoodHeader">
+                        <h5 class="modal-title col-12 modalFoodTitle" >CHOOSE YOUR MENU</h5>
+                        <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body row modalFoodBody">
+                        <button id="btnMea" type="button" class="btn btn-danger col-5" data-dismiss="modal" v-on:click="joinGameMeat(joinID)">MEAT</button>
+                        <button id="btnVeg" type="button" class="btn btn-primary col-5" data-dismiss="modal" v-on:click="joinGameVegetarian(joinID)">VEGETABLES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="js/games.js" type="text/javascript"></script>
+</body>
+
+</html>

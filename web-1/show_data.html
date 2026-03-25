@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feedback Sent</title>
+    <link rel="stylesheet" type="text/css" href="style/nysl_3.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Northside Youth Soccer League</h1>
+    </header>
+
+    <nav>
+      <a id="index">Home</a>
+      <a id="about" href="about.html">About NYSL</a>
+      <a id="rules" href="rules.html">Rules & Policies</a>
+      <a id="game_info" href="game_info.html">Game Information</a>
+      <a id="contact" href="contact.html">Contact</a>
+      <a id="registration" href="registration.html"></a>
+    </nav>
+
+    <a href="registration.html"
+      ><img id="register" src="imagenes/register2.png" alt="register"
+    /></a>
+
+    <main>
+      <div id="contenido">
+        <h2 id="feedbacktitle">
+          The following information has been sent as your feedback:
+        </h2>
+
+        <table id="feedbacktable" border="1" width="226">
+          <tr>
+            <th class="formtitle"><b>Form Field</b></th>
+            <th class="formtitle">Field Value</th>
+          </tr>
+
+          <script language="javascript">
+            var args = location.search.substr(1).split("&");
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split("=");
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                  value = "null";
+                } else {
+                  value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+                }
+
+                document.writeln('<tr><td align="center">' + field + "</td>");
+                document.writeln('<td align="center">' + value + "</td></tr>");
+              }
+            }
+          </script>
+
+          <noscript>
+            <tr>
+              <td>
+                <p>You need to turn on Javascript in your browser.</p>
+
+                <p>In Microsoft Internet Explorer 4 or greater:</p>
+                <ul>
+                  <li>
+                    From the "Tools" menu (in IE 4, it's the "View" menu),
+                    select "Internet Options".
+                  </li>
+                  <li>Click on the "Security" tab.</li>
+                  <li>
+                    Click on the "Custom Level" button. (In IE 4, select
+                    "Custom" and then click on "Settings...".)
+                  </li>
+                  <li>
+                    Under "Active scripting" make sure "Enable" is selected.
+                  </li>
+                </ul>
+
+                <p>In Netscape version 4 or greater:</p>
+                <ul>
+                  <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                  <li>
+                    In the <b>Category</b> list on the left, click on the word
+                    "Advanced".
+                  </li>
+                  <li>
+                    In the panel on the right, make sure "Enable JavaScript" is
+                    checked.
+                  </li>
+                  <li>Click the <b>OK</b> button.</li>
+                </ul>
+              </td>
+            </tr>
+          </noscript>
+        </table>
+      </div>
+    </main>
+
+    <img src="imagenes\nysl_logo.png" alt="logo" id="logo" />
+
+    <div id="img">
+      <img src="imagenes\messi2.jpg" alt="messi" id="principal" />
+      <img src="imagenes\ronaldo2.jpg" alt="ronaldo" id="principal2" />
+      <img src="imagenes\soccer_image1.jpg" alt="soccer1" id="soccer1" />
+      <img src="imagenes\soccer_image2.jpg" alt="soccer2" id="soccer2" />
+      <img src="imagenes\soccer_image3.jpg" alt="soccer3" id="soccer3" />
+      <img
+        src="imagenes\messironaldo.jpg"
+        alt="messironaldo"
+        id="messironaldo"
+      />
+    </div>
+  </body>
+</html>

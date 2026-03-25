@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style/nysl_3.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Northside Youth Soccer League</h1>
+    </header>
+
+    <nav>
+      <a id="index" href="index.html">Home</a>
+      <a id="about" href="about.html">About NYSL</a>
+      <a id="rules" href="rules.html">Rules & Policies</a>
+      <a id="game_info" href="game_info.html">Game Information</a>
+      <a id="contact" href="contact.html">Contact</a>
+      <a id="registration"></a>
+    </nav>
+
+    <a href="registration.html"
+      ><img id="register" src="imagenes/register2.png" alt="register"
+    /></a>
+
+    <main>
+      <div id="contenidoform">
+        <form action="./show_data.html" target="_blank" method="get">
+          <div id="subcontenido">
+            <h5 id="subtitleform">Registration Form</h5>
+
+            <div id="personaldata">
+              <label for="username">First Name</label>
+              <input
+                id="username"
+                type="text"
+                name="First-Name"
+                placeholder="user name"
+                required
+              />
+
+              <label for="lastname">Last Name</label>
+              <input
+                id="lastname"
+                type="text"
+                name="Last-Name"
+                placeholder="last name"
+                required
+              /><br />
+
+              <label for="streetadress">Street Adress</label>
+              <input
+                id="streetadress"
+                type="text"
+                name="Street-Adress"
+                placeholder="street adress"
+                required
+              /><br />
+
+              <label for="city">City</label>
+              <input
+                id="city"
+                type="text"
+                name="City"
+                placeholder="city"
+                required
+              />
+
+              <label for="zipcode">Zip Code</label>
+              <input
+                id="zipcode"
+                type="text"
+                name="Zip-Code"
+                placeholder="zip code"
+                required
+              /><br />
+
+              <label for="birthdate">Birth Date (mm/dd/yyyy)</label>
+              <input id="birthdate" type="date" name="Birthdate" required />
+
+              <label for="gender">Gender:</label>
+              <label>Female</label>
+              <input
+                id="gender"
+                type="radio"
+                name="Gender"
+                value="female"
+                required
+              />
+              <label>Male</label>
+              <input type="radio" name="Gender" value="male" required /><br />
+
+              <label for="grade">Grade:</label>
+              <label>Pre-School</label>
+              <input
+                id="grade"
+                type="radio"
+                name="Grade"
+                value="pre-school"
+                required
+              />
+              <label>1<sup>st</sup></label>
+              <input type="radio" name="Grade" value="first" required />
+              <label>2<sup>st</sup></label>
+              <input type="radio" name="Grade" value="second" required />
+              <label>3<sup>st</sup></label>
+              <input type="radio" name="Grade" value="third" required />
+              <label>4<sup>st</sup></label>
+              <input type="radio" name="Grade" value="fourth" required />
+              <label>5<sup>st</sup></label>
+              <input type="radio" name="Grade" value="fifth" required /><br />
+
+              <label for="parentguardian">Parent/Guardian</label>
+              <input
+                id="parentguardian"
+                type="text"
+                name="Parent-Guardian"
+                placeholder="parent/guardian"
+                required
+              /><br />
+
+              <label for="contactphone">Contact Phone</label>
+              <input
+                id="contactphone"
+                type="text"
+                name="Contact-Phone"
+                placeholder="contact phone"
+                required
+              />
+
+              <label for="contactemail">Email</label>
+              <input
+                id="contactemail"
+                type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                name="Contact-Email"
+                placeholder="contact email"
+                required
+              />
+            </div>
+
+            <div id="generalinformation">
+              <p class="question">
+                <b>Wich elementary schools do you live near?</b>
+              </p>
+
+              <label for="firstclosestschool">First Closest School:</label>
+              <select
+                id="firstclosestschool"
+                name="firstclosestschool"
+                required
+              >
+                <option value="">&nbsp;</option>
+                <option value="ajkatzenmaier">AJ Katzenmaier</option>
+                <option value="greenbay">Greenbay</option>
+                <option value="howard a yeager">Howard A Yeager</option>
+                <option value="marjorieohart">Marjorie P Hart</option>
+                <option value="northelementary">North Elementary</option>
+                <option value="southelementary">South Elementary</option>
+              </select>
+
+              <label for="secondclosestschool">Second Closest School:</label>
+              <select
+                id="secondclosestschool"
+                name="secondclosestschool"
+                required
+              >
+                <option value="">&nbsp;</option>
+                <option value="ajkatzenmaier">AJ Katzenmaier</option>
+                <option value="greenbay">Greenbay</option>
+                <option value="howard a yeager">Howard A Yeager</option>
+                <option value="marjorieohart">Marjorie P Hart</option>
+                <option value="northelementary">North Elementary</option>
+                <option value="southelementary">South Elementary</option>
+              </select>
+
+              <p class="question">
+                <b>What position(s) do you normally play?</b>(check all that
+                applay)
+              </p>
+              <label>Forward</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="forward"
+              />
+              <label>Defense</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="defense"
+              />
+              <label>Midfield</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="midfield"
+              />
+              <label>Goalkeeper</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="goalkeeper"
+              />
+
+              <p class="question">
+                <b>What position(s) do you want to play?</b>(check all that
+                applay)
+              </p>
+              <label>Forward</label>
+              <input
+                type="checkbox"
+                name="Position-Want-to-Play"
+                value="forward"
+              />
+              <label>Defense</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="defense"
+              />
+              <label>Midfield</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="midfield"
+              />
+              <label>Goalkeeper</label>
+              <input
+                type="checkbox"
+                name="Position-Normaly-Play"
+                value="goalkeeper"
+              />
+
+              <p class="question"><b>Uniform Information</b></p>
+
+              <label>Already have a uniform</label>
+              <input type="checkbox" name="Uniform" value="yes" />
+
+              <label for="jersey">Jersey Size:</label>
+              <select id="jersey" name="Jersey-Size">
+                <option value="">&nbsp;</option>
+                <option value="youthsmall">Youth Small</option>
+                <option value="youthmedium">Youth Medium</option>
+                <option value="youthlarge">Youth Large</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra-Large</option>
+              </select>
+
+              <label for="short">Short Size:</label>
+              <select id="short" name="Short-Size">
+                <option value="">&nbsp;</option>
+                <option value="youthsmall">Youth Small</option>
+                <option value="youthmedium">Youth Medium</option>
+                <option value="youthlarge">Youth Large</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra-Large</option>
+              </select>
+            </div>
+
+            <div id="permission">
+              <h6>Permission to Play</h6>
+              <p>
+                I, the parent or guardian of the minor registrant, agree that
+                the registrant and I will abide by all the rules of the
+                Northside Youth Soccer League (NYSL). In recognizing the
+                possibility of physical injury associated with soccer and in
+                consideration for the “League” accepting the registrant for its
+                soccer programs and activities, I hereby release, discharge,
+                and/or otherwise indemnify NYSL, their employees and associated
+                personnel and volunteers, including the facilities used for
+                practices and games, against any claim by or on behalf of the
+                registrant as a result of the registrant’s participation in the
+                program and/or being transported to or from NYSL sponsored
+                activities, which transportation. By entering your name below, I
+                hereby agree and authorize the above. In addition, by signing
+                below, I also acknowledge that I have read the cancellation
+                policy and agree to its terms.
+              </p>
+
+              <div id="parentsignature">
+                <label for="signature">Parent/Guardian Signature:</label>
+                <input id="signature" type="text" name="Signature" required />
+
+                <label for="date">Date:</label>
+                <input id="date" type="date" name="date" required />
+              </div>
+            </div>
+          </div>
+          <div id="endform">
+            <button id="buttonsubmit" type="submit">Submit</button>
+          </div>
+        </form>
+
+        <img src="imagenes/sealwax.png" alt="sealwax" id="sealwax" />
+      </div>
+    </main>
+
+    <img src="imagenes/nysl_logo.png" alt="logo" id="logo" />
+
+    <div id="img">
+      <!-- <img src="imagenes\messironaldo.jpg" alt="messironaldo" id="principal"> -->
+      <!-- <img src="imagenes\ronaldo2.jpg" alt="ronaldo" id="principal2"> -->
+      <img src="imagenes/soccer_image1.jpg" alt="soccer1" id="soccer1" />
+      <img src="imagenes/soccer_image2.jpg" alt="soccer2" id="soccer2" />
+      <img src="imagenes/soccer_image3.jpg" alt="soccer3" id="soccer3" />
+      <img
+        src="imagenes/messironaldo.jpg"
+        alt="messironaldo"
+        id="messironaldo2"
+      />
+    </div>
+  </body>
+</html>

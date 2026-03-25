@@ -1,0 +1,320 @@
+#app,
+#app .row {
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*HEADER*/
+header {
+    background-color: #003A50;
+    align-items: center;
+    font-family: 'Concert One';
+}
+
+#logo {
+    padding: 0% 0% 0% 2%;
+}
+
+#headerTitle {
+    margin: 0%;
+    padding: 3%;
+    font-size: 3vw;
+}
+
+#chat {
+    padding: 0% 1% 0% 1%;
+}
+
+#notification {
+    padding: 0% 2% 0% 1%;
+}
+
+/*#exampleModal {
+    color: black;
+}*/
+
+/*MAIN BUTTONS*/
+section .mainNavbar {
+    background-color: #13ad32;
+    font-family: 'Concert One';
+    padding: 0%;
+}
+
+section .mainNavbar .navbar-brand {
+    font-size: 5vw;
+    padding: 0% 2%;
+    margin: 0%;
+    text-align: center;
+}
+
+#homePng,
+#fixturePng {
+    margin-right: 5px;
+    width: 4vw;
+    height: 4vw;
+    vertical-align: inherit;
+}
+
+button .navbar-toggler-icon {
+    background-image: url(../imagenes/burger-menu.jpg);
+    width: 6vw;
+    height: 6vw;
+}
+
+nav .navbarNav {
+    background-color: #13c732;
+    padding: 0% 2%;
+}
+
+.nav-item .nav-link {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.nav-item .arrow {
+    height: 9vw;
+    padding: 3% 3%;
+}
+
+/*.mainTwo .mainButton {
+    padding: 2% 0%;
+    margin: 0% 0.5%;
+    background-image: url(../imagenes/pasto.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    border-radius: 10px;
+
+}
+
+div .mainButton:focus {
+    text-decoration: none;
+}
+
+div .mainButton:hover {
+    color: white;
+    text-decoration: none;
+    border: solid 1px blue;
+}
+
+.chatButton {
+    background-color: white;
+}*/
+
+#index,
+#fixture,
+#locations {
+    margin-bottom: 0.5%;
+    padding: 0%;
+    font-family: 'Concert One';
+}
+
+/*PAGES*/
+.importantRow {
+    /*border-top: 2px solid #21b017;*/
+    background-image: url(../imagenes/futbolback2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .indexFooter {
+    background-color: #003A50;
+    border-top: 1px solid #21b017;
+    margin: 0.5% 0% 0% 0%;
+    padding: 0%;
+    font-size: 60%;
+}
+
+/*HOME*/
+#news {
+    margin-top: 2%;
+    list-style: none;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 4% 2% 0% 2%;
+    color: white;
+}
+
+#news li img {
+    padding: 0%;
+}
+
+#news li h6 {
+    margin: 0%;
+    align-self: center;
+    font-size: 4vw;
+}
+
+#forecast {
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url(../imagenes/LightBlue-bg.png);
+}
+
+#day {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+#timezone,
+div .weather,
+#wtext {
+    padding: 0%;
+}
+
+#location_timezoneTwo,
+#location_timezone {
+    text-align: center;
+}
+
+#w_icon,
+#w_iconTwo,
+#temp_degree,
+#temp_degreeTwo,
+div .weather p {
+    padding: 0%;
+    align-self: center;
+    text-align: center;
+}
+
+#temp_description,
+#temp_descriptionTwo {
+    padding: 0%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#clima {
+    padding: 4% 0% 2% 0%;
+    width: 95%;
+}
+
+/*FIXTURE*/
+#upcomingGames {
+    padding: 1%;
+}
+
+#headingOne, #headingTwo {
+    padding: 0%;
+    background-color: #1966b3;
+    border-radius: 3%;
+}
+
+#headingOne h5, #headingTwo h5 {
+    justify-content: center;
+    align-items: center;
+}
+
+#headingOne .btn-link, #headingTwo .btn-link {
+    color: white;
+    font-size: 120%;
+}
+
+#collapseOne,
+#collapseTwo {
+    background-image: url(../imagenes/futbolback2.jpg);
+}
+
+#collapseOne .card-body,
+#collapseTwo .card-body {
+    padding: 0%;   
+}
+
+#upcomingTable,
+#allSeasonTable {
+    margin-bottom: 1px;
+}
+
+#upcomingTable thead,
+#allSeasonTable thead {
+    color: white;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+}
+
+#upcomingTable thead th,
+#allSeasonTable thead th {
+    color: white;
+    letter-spacing: 1px;
+    padding: 1%;
+}
+
+#upcomingTable tbody,
+#allSeasonTable tbody {
+    color: black;
+}
+
+#upcomingTable tbody td,
+#allSeasonTable tbody td {
+    padding: 1%;
+}
+
+/*FOOTER*/
+#footer {
+    background-color: #003A50;
+    background-size: cover;
+    font-family: sans-serif;
+    color: white;
+    padding: 2%;
+
+}
+
+#footerOne {
+    margin: 0%;
+    padding-top: 5%;
+    font-size: 3vw;
+}
+
+#phone:focus,
+#mail:focus {
+    text-decoration: none;
+}
+
+#phone:hoover,
+#mail:hoover {
+    text-decoration: none;
+
+}
+
+#footerTwo {
+    padding: 0%;
+    margin: 0%;
+    font-size: 4vw;
+}
+
+#footerTwo:focus {
+    text-decoration: none;
+}
+
+##footerTwo:hover {
+    text-decoration: none;
+}
+
+#footerTitle {
+    letter-spacing: 5px;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Concert One';
+    color: white;
+}
+
+#logoweb {
+    height: 5%;
+    width: 5%;
+    margin: 2%;
+}
+
+@media only screen and (min-width: 600px) {
+    .scrollspy-example {
+        height: 400px;
+        overflow: auto;
+    }
+
+    iframe {
+        height: 200px;
+        width: 200px;
+    }
+}
+}

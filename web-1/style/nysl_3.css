@@ -1,0 +1,615 @@
+html {
+	font-family: 'Concert One', cursive; 
+	margin: 0px;
+	padding: 0px;
+}
+
+body { 
+	background-color: darkgreen;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-image: url("../imagenes/pasto.jpg");
+	background-size: cover;
+	margin: 0px 40px 0px 40px;
+	padding: 0px;
+	height: 300px;
+}
+
+h1	{
+	margin: 0px 0px 0px 250px;
+	padding-top: 30px;
+	font-size: 90px;
+	font-family: 'Indie Flower', cursive; 
+	font-style: italic;
+	line-height: 100px;
+	text-transform: uppercase;
+	color: white;
+}
+
+nav {
+	position: absolute;
+	margin-left: 50px;
+	top: 290px;
+	width: 80%;
+    background-color: #333;
+    border-radius: 10px;
+ }
+
+nav a {
+	text-decoration: none;
+	float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	font-size: 25px;
+  	color: white;
+  	margin: 0px 5px 0px 10px;
+}
+
+#register {
+	position: absolute;
+	right: 300px;
+	top: 270px;
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+}
+
+main {
+	background-image: url(../imagenes/background1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 35px 40px 0px 40px;
+	padding-top: 10px;
+	padding-bottom: 200px;
+	width: 94%;	
+}
+
+h2 {
+	margin: 30px 290px 40px 290px;
+	text-align: center;
+	font-size: 34px;
+	background-color: #333;
+	border-radius: 10px;
+	height: 50px;
+	color: white;
+	padding-right: 40px;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40px;
+}
+
+#subtitleindex 	{
+	background-image: url(../imagenes/event.png);
+}
+
+#subtitleabout 	{
+	background-image: url(../imagenes/nysl_logo.png);	
+}
+
+#subtitlegameinfo {
+	background-image: url(../imagenes/calendar.png);
+}
+
+#subtitlerules	{
+	background-image: url(../imagenes/referee.png);	
+}
+
+#subtitlecontact	{
+	background-image: url(../imagenes/contact.png);
+ }
+
+h3 {
+	margin: -30px 0px 10px 290px;
+	padding: 0px 20px 0px 0px;
+	text-align: left;
+	text-indent: 20px;
+	font-size: 20px;
+	font-weight: normal;
+	background-color: #333;
+	border-radius: 10px;
+	width: 670px;
+	height: 30px;
+	color: white;
+}
+
+#contenido {
+	margin: 20px 290px 0px 290px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*Rules CSS*/
+
+h4, ul, ol, li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	list-style-position: inside;	
+}
+
+ol, ul, li {
+	margin: 0px;
+}
+
+li p {
+	margin: 5px 0px 15px 0px;
+}
+
+h4 {
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40px;
+}
+
+#season	{
+	background-image: url(../imagenes/leaves.png); 
+	background-color: rgb(196,65,0);
+}
+
+#sportman	{
+	background-image: url(../imagenes/about-us.png);	
+}
+
+#field {
+	background-image: url(../imagenes/field.png);
+}
+
+#equipment {
+	background-image: url(../imagenes/shirt.png);
+}
+
+#players {
+	background-image: url(../imagenes/team.png);
+}
+
+#substitutions {
+	background-image: url(../imagenes/subtitution.png);
+}
+
+#confiscated {
+	background-image: url(../imagenes/amonestation.png);
+}
+
+#allplay {
+	background-image: url(../imagenes/futbolcalendar.png);
+}
+#equipment2 {
+	background-image: url(../imagenes/match.png);
+}
+#mixedteams	{
+	background-image: url(../imagenes/restrooms.png);
+}
+#coaching {
+	background-image: url(../imagenes/football-coach-screaming.png);
+}
+#termination {
+	background-image: url(../imagenes/football-referee-raising-card.png);
+}
+#replay {
+	background-image: url(../imagenes/futbolcalendar.png);
+}
+#referee {
+	background-image: url(../imagenes/football-referee-raising-card.png);
+}
+
+.firstlist {
+	margin: 0px;
+	padding: 10px 10px 0px 10px;
+}
+
+.secondlist {
+	list-style-image: url(../imagenes/left-curve-arrow.png);
+}
+
+#fieldyoung	{
+	list-style-type: lower-alpha;
+	padding: 0px 10px 0px 50px;
+	margin-top: 0px;
+}
+
+#fieldyoung li	{
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+#benchareas {
+	padding: 0px 10px 0px 50px;
+	margin-top: 0px;
+}
+
+#benchareas > li {
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.bench {
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.bench > li 	{
+	list-style-image: url(../imagenes/left-curve-arrow.png);
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+#substitute {
+	list-style-type: lower-alpha;
+	padding: 0px 10px 0px 50px;
+	margin-top: 0px;
+}
+
+/*Game Info Table CSS*/
+
+table	{
+	background-color: green;
+	border-radius: 10px;
+	border-collapse: collapse;
+	margin: 0px auto 20px auto;
+	padding: 10px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+thead	{
+	text-transform: uppercase;
+	border: 0;
+    height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+th 	{
+	padding: 10px 0px 10px 0px;  
+}
+
+.row {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+td 	{
+	padding: 10px;
+	height: 20%;
+}
+
+.location 	{
+	text-align: left;
+}
+
+.date 	{
+	vertical-align: top;
+}
+
+#gamelocationtitle 	{
+	margin: 40px 10px 10px 0px;
+	padding: 10px 30px 10px 10px;
+	width: 50%;
+	background-color: #333;
+	background-image: url(../imagenes/map.png);
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40px;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+#gamelocation 	{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.schoolloc > h6 {
+ 	text-align: left;
+ 	padding-left: 5px;
+ 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+.schoolloc > p {
+	text-align: left;
+ 	padding-left: 5px;
+}
+
+#generalinfo	{
+	margin-top: 10px;
+	grid-column-start: 1; 
+  	grid-column-end: 3;
+  	padding: 10px
+ }
+
+#generalinfo ul {
+	background-color: white;
+	color: black; 
+}
+
+#personalcontact {
+	border: solid 1px black;
+	padding: 0px 20px 0px 20px;
+	background-color: white;
+	color: black;
+	margin: 0px;
+	font-size: 20px;
+}
+
+.generalinfo2 {
+	background-color: white;
+	color: black;
+	margin: 0px;
+	padding: 10px;
+}
+
+.emailphone {
+	margin: 10px 0px 10px 50px;
+	background-color: white;
+	color: black;
+	padding: 0px;
+}
+
+/*Contact html*/
+
+#mail {
+	display: inline;
+	text-decoration: none;
+	color: black;
+}
+
+.title, h4 {
+	margin: 20px 0px 10px 0px;
+	padding: 14px 16px;
+	background-color: green;
+	border-radius: 10px;
+	height: 25px;
+	font-size: 20px;
+	color: white;
+}
+
+.description, ul, ol, li {
+	top: 280px;
+	margin: 10px 0px 10px 0px;
+	padding: 14px 16px;
+	background-color: #333;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: justify;
+	line-height: 30px;
+	color: white;
+}
+
+/*Regitration Form*/
+
+#navform 	{
+	margin: 0px 0px 0px 10%;
+	padding: 0px;
+	text-align: center;
+}
+
+#contenidoform 	{
+	margin: 20px 100px 0px 100px;
+	background-image: url(../imagenes/papiro1.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: time new roman;
+	font-size: 20px;
+}
+
+#subcontenido	{
+	padding: 7% 10% 0% 10%;
+}
+
+h5 	{
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+label, input	{
+	margin: 0px 15px 15px 0px;
+	left: 0px;
+}
+
+#personaldata {
+	margin-bottom: 30px;
+}
+
+#username, #lastname	{
+	width: 290px;
+}
+
+#streetadress 	{
+	width: 700px;
+}
+
+#city	{
+	width: 300px;
+}
+
+#zipcode  	{
+	width: 280px;
+}
+
+#birthdate 	{
+	margin-right: 40px;
+}
+
+#parentguardian 	{
+	width: 680px;
+}
+
+#contactphone, #contactemail {
+	width: 270px;
+}
+
+#generalinfomation {
+	margin-bottom: 30px;
+}
+
+.question {
+	margin-bottom: 10px;
+}
+
+#firstclosestschool, #secondclosestschool {
+	margin: 0px 15px 15px 0px;
+	width: 210px;
+	}
+
+#permission 	{
+	margin-top: 30px;
+}
+
+h6 {
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+p {
+	text-align: justify;
+	font-style: italic;
+}
+
+#parentsignature 	{
+	text-align: left;
+}
+
+#signature	{
+	margin-right: 30px;
+	height: 40px;
+	width: 300px;
+}
+
+#endform 	{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 5px 10px 10px 20px;
+	width: 50%;
+	
+}
+
+#buttonsubmit 	{
+	top: 1640px;
+    margin-left: 70px;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#sealwax 	{
+	margin-top: 0px;
+	margin-left: 700px;
+	height: 300px;
+	width: 300px;
+}
+
+#endform #buttonsubmit:hover {
+  background-color: black;
+}
+
+/*Show_data*/
+
+#feedbacktitle {
+	margin: 0px;
+	padding: 10px 10px 40px 10px;
+	text-align: center;
+
+}
+
+.formtitle  {
+	height: 10px;
+	background-color: #333;
+	border-radius: 10px;
+}
+
+#feedbacktable 	{
+margin-top: 50px;
+}
+
+/*Imagenes*/
+
+#img {
+	display: inline;
+}
+
+#logo {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 35px;
+	left: 25px;
+}
+
+#principal {
+	position: absolute;
+	top: 250px;
+	right: 20px;
+	height: 400px;
+	width: 250px;
+	border-radius: 60px;
+	z-index: 1;
+}
+
+#principal2 {
+	position: absolute;
+	top: 380px;
+	left: 20px;
+	height: 400px;
+	width: 250px;
+	border-radius: 60px;
+	z-index: 1;
+}
+
+#soccer1, #soccer2, #soccer3, #messironaldo, #design2, #design1 {
+	position: absolute;
+	top: 357px;
+	height: 100px;
+	width: 150px;
+	visibility: hidden;
+}
+
+#soccer1 {
+		left: 250px;
+		border-radius: 50px 50px 50px 50px;
+}
+
+#soccer2 {
+		left: 420px;
+		border-radius: 50px 0px 0px 50px;
+}
+
+#soccer3 {
+		left: 570px;
+		border-radius: 0px 50px 50px 0px;
+}
+
+#messironaldo {
+		left: 740px;
+		border-radius: 50px 50px 50px 50px;
+}
+
+#messironaldo2 {
+	position: absolute;
+	top: 250px;
+	right: 20px;
+	height: 350px;
+	width: 220px;
+	border-radius: 60px;
+	z-index: 1;
+}
+
